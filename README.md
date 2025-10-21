@@ -80,20 +80,22 @@ pip install -r requirements.txt
 
 ## Running the Experiments
 
-Each experiment can be executed via the orchestrator script: 
+#### Each experiment can be executed via the orchestrator script: 
 
 python main.py --config configs/experiment_1.yaml
 
 
-Alternatively, use the provided Makefile targets:
+#### Alternatively, use the provided Makefile targets:
 
 
 make experiment1      # Run Experiment 1 
+
 make experiment2      # Run Experiment 2 
+
 make experiment3      # Run Experiment 3
 
 
-For Windows users:
+#### For Windows users:
 
 make -f Makefile.win experiment1
 

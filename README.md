@@ -1,6 +1,6 @@
 # Improving Soundscape Retrieval for Bioacoustic Monitoring
 
-This repository contains the official implementation of the paper **"Improving Soundscape Retrieval for Bioacoustic Monitoring: An  Analysis of Fusion Techniques with Pre-trained Embeddingss"**, accepted at **WebMedia 2025**.  
+This repository contains the official implementation of the paper **"Improving Soundscape Retrieval for Bioacoustic Monitoring: An  Analysis of Fusion Techniques with Pre-trained Embeddings"**, accepted at **WebMedia 2025**.  
 The project focuses on developing efficient and explainable methods for retrieving similar ecoacoustic recordings using deep-learning embeddings and vector databases.
 
 ---
@@ -78,10 +78,27 @@ pip install -r requirements.txt
 
 ---
 
+## Running the Experiments
 
-## License
+Each experiment can be executed via the orchestrator script: 
 
-This project is open-source and distributed under the MIT License.
-Feel free to use, modify, and adapt it for academic and research purposes, citing the original paper.
+python main.py --config configs/experiment_1.yaml
 
----
+
+Alternatively, use the provided Makefile targets:
+
+
+make experiment1      # Run Experiment 1 
+make experiment2      # Run Experiment 2 
+make experiment3      # Run Experiment 3
+
+
+For Windows users:
+
+make -f Makefile.win experiment1
+
+--- 
+
+
+
+

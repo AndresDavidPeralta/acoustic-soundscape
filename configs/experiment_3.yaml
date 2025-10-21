@@ -1,0 +1,36 @@
+experiment_name: "experiment_3"
+
+paths:
+  logs_dir: "results/logs"
+  results_dir: "results/experiment_3"
+
+env: {}
+
+steps:
+  - name: "Organize dataset (compact base)"
+    enabled: true
+    cmd: "python experiment_3.py"
+
+  - name: "Resample to 32 kHz + Noise Reduce"
+    enabled: true
+    cmd: "python resampling_noisereduce.py"
+
+  - name: "Extract MFCCs"
+    enabled: true
+    cmd: "python extract_mfccs.py"
+
+  - name: "Extract Perch embeddings"
+    enabled: true
+    cmd: "python extract_embeddings.py"
+
+  - name: "Generate feature fusions / embeddings"
+    enabled: true
+    cmd: "python generate_fusions.py"
+
+  - name: "Evaluate (Perch embeddings: HNSW / IMENN)"
+    enabled: true
+    cmd: "python run_experiments_embeddings.py"
+
+  - name: "Evaluate (MFCC embeddings: HNSW / IMENN)"
+    enabled: true
+    cmd: "python run_experiments_mfcc.py"

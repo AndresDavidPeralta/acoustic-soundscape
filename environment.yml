@@ -1,0 +1,33 @@
+name: acustic-soundscape
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.13
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - tqdm
+  - pyyaml
+  - librosa
+  - pysoundfile
+  - noisereduce
+  - audiomentations
+  - pytorch
+  - torchaudio
+  - tensorflow
+  - tensorflow-hub
+  - faiss-cpu
+  - vectordb
+  - docarray
+  - sentence-transformers
+  - requests
+  - joblib
+  - pathlib
+  - argparse
+  - pydantic
+  - typing-extensions
+  - jupyter
+  - notebook

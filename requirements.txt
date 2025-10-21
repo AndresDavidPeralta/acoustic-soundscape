@@ -1,0 +1,30 @@
+# =========================================================
+# Requirements for Semantic Soundscape Retrieval Pipeline
+# Author: Andrés D. Peralta de Aguas
+# Paper: Semantic Retrieval of Soundscapes using Deep Learning and Vector Databases
+# =========================================================
+
+numpy
+pandas
+scipy
+matplotlib
+tqdm
+pyyaml
+librosa
+soundfile
+noisereduce
+audiomentations
+torch
+torchaudio
+tensorflow
+tensorflow-hub
+faiss-cpu
+vectordb
+docarray
+sentence-transformers
+requests
+joblib
+pathlib
+argparse
+pydantic
+typing-extensions

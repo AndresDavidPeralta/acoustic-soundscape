@@ -1,0 +1,50 @@
+#  Makefile.win - Windows version for Acustic Soundscape
+
+PY := .venv\Scripts\python.exe
+PIP := .venv\Scripts\pip.exe
+MAIN := main.py
+CONFIG_DIR := configs
+
+.PHONY: help setup exp1 exp2 exp3 all clean
+
+help:
+	@echo.
+	@echo "Available commands:"
+	@echo "  make setup     - create .venv and install dependencies"
+	@echo "  make exp1      - run Experiment 1"
+	@echo "  make exp2      - run Experiment 2"
+	@echo "  make exp3      - run Experiment 3"
+	@echo "  make all       - run all experiments sequentially"
+	@echo "  make clean     - remove logs and caches"
+	@echo.
+
+setup:
+	@if not exist .venv ( \
+		echo Creating virtual environment... && \
+		python -m venv .venv \
+	)
+	@echo Installing dependencies...
+	@$(PIP) install --upgrade pip
+	@$(PIP) install -r requirements.txt || echo requirements.txt not found (skipping)
+
+exp1:
+	@echo Running Experiment 1 ...
+	@$(PY) $(MAIN) --config $(CONFIG_DIR)\experiment_1.yaml
+
+exp2:
+	@echo Running Experiment 2 ...
+	@$(PY) $(MAIN) --config $(CONFIG_DIR)\experiment_2.yaml
+
+exp3:
+	@echo Running Experiment 3 ...
+	@$(PY) $(MAIN) --config $(CONFIG_DIR)\experiment_3.yaml
+
+all: exp1 exp2 exp3
+	@echo All experiments completed successfully!
+
+clean:
+	@echo Cleaning logs and caches ...
+	@if exist results\logs rmdir /S /Q results\logs
+	@if exist __pycache__ rmdir /S /Q __pycache__
+	@for /d %%D in (*\__pycache__) do @rmdir /S /Q "%%D"
+	@del /Q /F *.pyc 2>nul

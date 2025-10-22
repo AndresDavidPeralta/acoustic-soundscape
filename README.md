@@ -127,7 +127,7 @@ make -f Makefile.win experiment1
 
 ## License
 
-<p align="justify"> This repository is protected by copyright © 2025 Andrés D. Peralta de Aguas. </p> <p align="justify"> Use is permitted exclusively for academic and scientific verification purposes. </p> <p align="justify"> For collaborations or specific licensing requests, please contact the author at: andres@icomp.ufam.edu.br. </p>
+<p align="justify"> This repository is protected by copyright © 2025. Use is permitted exclusively for academic and scientific verification purposes. </p> <p align="justify"> For collaborations or specific licensing requests, please contact the author at: andres@icomp.ufam.edu.br. </p>
 
 ---
 

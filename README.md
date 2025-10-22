@@ -51,6 +51,7 @@ acoustic-soundscape/
 The experiments were conducted using public bioacoustic datasets, including BirdCLEF 2025, available at: https://www.kaggle.com/competitions/birdclef-2025/data
 
 This dataset contains thousands of birds, amphibians, mammals and insects vocalizations from different species and recording conditions.
+
 ---
 
 

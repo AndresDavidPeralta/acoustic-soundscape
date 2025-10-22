@@ -1,10 +1,7 @@
 # Improving Soundscape Retrieval for Bioacoustic Monitoring
 
 <p align="justify">
-This repository contains the official implementation of the paper Improving Soundscape Retrieval for Bioacoustic Monitoring: An  Analysis of Fusion Techniques with Pre-trained Embeddings, accepted at WebMedia 2025.
-</p>
-<p align="justify">
-The project focuses on developing efficient and explainable methods for retrieving similar ecoacoustic recordings using deep-learning embeddings and vector databases.
+This repository contains the official implementation of the paper Improving Soundscape Retrieval for Bioacoustic Monitoring: An  Analysis of Fusion Techniques with Pre-trained Embeddings, accepted at WebMedia 2025. The project focuses on developing efficient and explainable methods for retrieving similar ecoacoustic recordings using deep-learning embeddings and vector databases.
 </p>
 
 ---

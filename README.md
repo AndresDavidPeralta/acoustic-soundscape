@@ -1,13 +1,19 @@
 # Improving Soundscape Retrieval for Bioacoustic Monitoring
 
-This repository contains the official implementation of the paper **"Improving Soundscape Retrieval for Bioacoustic Monitoring: An  Analysis of Fusion Techniques with Pre-trained Embeddings"**, accepted at **WebMedia 2025**.  
+<p align="justify">
+This repository contains the official implementation of the paper Improving Soundscape Retrieval for Bioacoustic Monitoring: An  Analysis of Fusion Techniques with Pre-trained Embeddings, accepted at WebMedia 2025.
+</p>
+<p align="justify">
 The project focuses on developing efficient and explainable methods for retrieving similar ecoacoustic recordings using deep-learning embeddings and vector databases.
+</p>
 
 ---
 
 ##  Overview
 
-The retrieval of similar soundscapes is essential for **bioacoustic** and **ecoacoustic monitoring**, yet it remains challenging due to the large volume of unlabeled data, environmental noise, and the complexity of acoustic scenes.  To overcome the limitations of traditional feature-based methods, this study  proposes an **efficient system** that integrates **embeddings extracted from a pretrained deep learning model**, combined with a **noise reduction technique** and **feature fusion strategies** within a **vector database** to enable similarity-based retrieval.  We evaluated the system using **bird**, **amphibian**, and **mammal** recordings across four experimental methodologies, including a use case focused on **endangered species**. Results show that **embedding vectors consistently outperform traditional MFCC (Mel-frequency cepstral coefficients) features** in capturing acoustic similarity, and that **approximate search algorithms (HNSW)** significantly improve both retrieval precision and query efficiency.   Additionally, the system effectively retrieves recordings of the **critically endangered species *Crax alberti*** and maps their **geographic distribution**, highlighting its potential for **conservation planning** and **early-warning monitoring**.
+<p align="justify">
+The retrieval of similar soundscapes is essential for bioacoustic and ecoacoustic monitoring, yet it remains challenging due to the large volume of unlabeled data, environmental noise, and the complexity of acoustic scenes.  To overcome the limitations of traditional feature-based methods, this study  proposes an efficient system that integrates embeddings extracted from a pretrained deep learning model, combined with a noise reduction technique and feature fusion strategies within a vector database to enable similarity-based retrieval.  We evaluated the system using bird, amphibian, and mammal recordings across four experimental methodologies, including a use case focused on endangered species. Results show that embedding vectors consistently outperform traditional MFCC (Mel-frequency cepstral coefficients) features in capturing acoustic similarity, and that approximate search algorithms (HNSW) significantly improve both retrieval precision and query efficiency. Additionally, the system effectively retrieves recordings of the critically endangered species Crax alberti and maps their geographic distribution, highlighting its potential for conservation planning and early-warning monitoring.
+</p>
 
 ---
 
@@ -16,12 +22,12 @@ The retrieval of similar soundscapes is essential for **bioacoustic** and **ecoa
 ```bash
 acoustic-soundscape/
 │
-├── configs/                     # YAML experiment configuration files
+├── configs/                  # YAML experiment configuration files
 │   ├── experiment_1.yaml
 │   ├── experiment_2.yaml
 │   └── experiment_3.yaml
 │
-├── scripts/                     # Main experiment scripts
+├── scripts/                  # Main experiment scripts
 │   ├── check_dependencies.py
 │   ├── run_experiments_embeddings.py
 │   ├── run_experiments_mfcc.py
@@ -31,7 +37,7 @@ acoustic-soundscape/
 │   ├── experiment_3.py
 │   └── geolocation_map.py
 │
-├── src/                         # Core signal-processing modules
+├── src/                      # Core signal-processing modules
 │   ├── extract_embeddings.py
 │   ├── extract_mfccs.py
 │   ├── generate_fusions.py
@@ -39,18 +45,18 @@ acoustic-soundscape/
 │   └── rms_energy.py
 │
 │
-├── main.py                      # Orchestrator script 
-├── requirements.txt             # Python dependencies
-├── environment.yml              # Conda environment definition
-├── Makefile                     # Linux/macOS automation
-├── Makefile.win                 # Windows automation
-└── README.md                    # Project documentation
+├── main.py                   # Orchestrator script 
+├── requirements.txt          # Python dependencies
+├── environment.yml           # Conda environment definition
+├── Makefile                  # Linux/macOS automation
+├── Makefile.win              # Windows automation
+└── README.md                 # Project documentation
 ```
+
 ## Dataset
 
-The experiments were conducted using public bioacoustic datasets, including BirdCLEF 2025, available at: https://www.kaggle.com/competitions/birdclef-2025/data
-
-This dataset contains thousands of birds, amphibians, mammals and insects vocalizations from different species and recording conditions.
+The experiments were conducted using public bioacoustic datasets, including BirdCLEF 2025, available at: https://www.kaggle.com/competitions/birdclef-2025/data 
+<p align="justify"> This dataset contains thousands of birds, amphibians, mammals and insects vocalizations from different species and recording conditions. </p>
 
 ---
 
@@ -120,9 +126,8 @@ make -f Makefile.win experiment1
 
 
 ## License
-This repository is protected by copyright © 2025 Andrés D. Peralta de Aguas.  
-Use is permitted exclusively for academic and scientific verification purposes.  
-For collaborations or specific licensing requests, please contact the author at: [andres@icomp.ufam.edu.br](mailto:andres@icomp.ufam.edu.br).
+
+<p align="justify"> This repository is protected by copyright © 2025 Andrés D. Peralta de Aguas. </p> <p align="justify"> Use is permitted exclusively for academic and scientific verification purposes. </p> <p align="justify"> For collaborations or specific licensing requests, please contact the author at: andres@icomp.ufam.edu.br. </p>
 
 ---
 

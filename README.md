@@ -51,55 +51,79 @@ acoustic-soundscape/
 The experiments were conducted using public bioacoustic datasets, including BirdCLEF 2025, available at: https://www.kaggle.com/competitions/birdclef-2025/data
 
 This dataset contains thousands of birds, amphibians, mammals and insects vocalizations from different species and recording conditions.
-
 ---
 
 
 ## Installation
 
-Clone the repository and create a virtual environment: git clone https://github.com/AndresDavidPeralta/acustic-soundscape.git
-
+Clone the repository and create a virtual environment: 
+```bash
+git clone https://github.com/AndresDavidPeralta/acoustic-soundscape.git
+```
+```bash
 cd acustic-soundscape
+```
 
 ### Option 1: using Conda
 
+```bash
 conda env create -f environment.yml
-
+```
+```bash
 conda activate acoustic-soundscape
+```
 
 ### Option 2: using pip
 
+```bash
 python -m venv .venv
+```
+```bash
 source .venv/bin/activate  # Linux/macOS
-
+```
+```bash
 .venv\Scripts\activate     # Windows
-
+```
+```bash
 pip install -r requirements.txt
-
+```
 ---
 
 ## Running the Experiments
 
 #### Each experiment can be executed via the orchestrator script: 
 
+```bash
 python main.py --config configs/experiment_1.yaml
-
+```
 
 #### Alternatively, use the provided Makefile targets:
 
 
-make experiment1      # Run Experiment 1 
-
-make experiment2      # Run Experiment 2 
-
+```bash
+make experiment1      # Run Experiment 1
+```
+```bash
+make experiment2      # Run Experiment 2
+```
+```bash
 make experiment3      # Run Experiment 3
-
-
+```
+ 
 #### For Windows users:
 
+```bash
 make -f Makefile.win experiment1
-
+```
 --- 
+
+
+## License
+This repository is protected by copyright © 2025 Andrés D. Peralta de Aguas.  
+Use is permitted exclusively for academic and scientific verification purposes.  
+For collaborations or specific licensing requests, please contact the author at: [andres@icomp.ufam.edu.br](mailto:andres@icomp.ufam.edu.br).
+
+---
 
 
 
